@@ -1,0 +1,139 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover; /* This ensures the image covers the entire area */
+  background-position: center; /* This centers the image */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
+  background-image: url(https://i.pinimg.com/originals/60/bb/b6/60bbb6fa263bc404caca7875e7567d9c.gif);
+}
+
+
+.dark-grey {
+  background-color: #2b2b2b; /* dark black-grey */
+}
+
+.medium-grey {
+  background-color: #666666; /* medium grey */
+}
+
+.light-grey {
+  background-color: #cccccc; /* light grey */
+}
+
+.catclock{
+  height: 150px;
+}
+
+.blackbow {
+  height: 80px;
+  width: 80px;
+}
+
+
+/* Outer browser frame */
+.browser-window {
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.browser-header {
+  background-color: black; 
+  padding: 8px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.browser-header .circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+
+
+/* Content inside */
+.browser-content {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Calistoga', cursive;
+  color: #333; 
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin: 10px 5px 0;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/*Decor*/
+/* App Bar Styling */
+.app-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* App Icon Styling */
+.app-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/* Credits Styling */
+.credits {
+  font-size: 14px;
+  font-weight: 300;
+}

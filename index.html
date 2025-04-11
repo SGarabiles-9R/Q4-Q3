@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Dosis:wght@200..800&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Exercise 2 || Conditional Operators</title>
+  </head>
+
+  <body>
+    <div class="browser-window">
+
+        <!-- Circles Browser Design -->
+        <div class="browser-header">
+              <div class="circle dark-grey"></div>
+              <div class="circle medium-grey"></div>
+              <div class="circle light-grey"></div>
+        </div>
+
+
+      <!-- Browser content -->
+      <div class="browser-content">
+        <!-- Title -->
+        <h2>Earthquake Intensity Scale</h2>
+
+            <img class="catclock" src="https://media.tenor.com/7ZLabXrtXWEAAAAj/cat-clock-clock.gif">
+
+        <!-- Form -->
+        <div>
+          <label>Enter Magnitude</label>
+          <input type="number" id="strength" />
+        </div>
+
+
+          <br>
+            <img class="blackbow" src="https://media.tenor.com/eGCjV7lEokoAAAAi/black-bow.gif">
+          <br>
+          <br>
+
+        <!-- Buttons -->
+        <div>
+          <button type="button" class="btn btn-dark" onclick="strengthEffect()">Check</button>
+          <button onclick="location.reload()" class="btn btn-dark">Refresh</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT BLOCK -->
+    <script type="text/javascript">
+      function strengthEffect() {
+        var inputStrength = document.getElementById("strength").value;
+
+        if (inputStrength < 2.5) {
+          window.alert("Not Always Felt");
+        }
+
+        if (inputStrength >= 2.5 && inputStrength<= 5.4) {
+          window.alert("Rarely Damage");
+        }
+
+        if (inputStrength >= 5.5 && inputStrength<= 6.0) {
+          window.alert("Slight Damage");
+        }
+
+        if (inputStrength >= 6.1 && inputStrength<= 6.9) {
+          window.alert("Damage Likely");
+        }
+
+        if (inputStrength >= 7.0 && inputStrength<= 7.9) {
+          window.alert("Major Damage");
+        }
+
+        if (inputStrength >= 8 ) {
+          window.alert("Catastrophic");
+        }
+
+            }
+    </script>
+
+<!-- Decor -->
+    <div class="app-bar">
+  <div class="app-icons">
+    <div class="icon">
+      <img src="https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/244336bd17dc1d3e983f09cc58576abc_low_res_AltServer.png" alt="App Icon 1">
+    </div>
+    <div class="icon">
+      <img src="https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/3b98744469fbd91362c2b233f26459d6_low_res_ChatWise.png" alt="App Icon 2">
+    </div>
+    <div class="icon">
+      <img src="https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/9111f8e8a2152074f3bbf32fa9566bb0_low_res_VSCode_Monochrome.png" alt="App Icon 3">
+    </div>
+    <div class="icon">
+      <img src="https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/393d955335de1803a47f7beb5d5d2db0_low_res_Unity_Hub.png" alt="App Icon 4">
+    </div>
+  </div>
+  <div class="credits">
+    <span>Shalanie Garabiles || 9 Ruby</span>
+  </div>
+</div>
+
+  </body>
+</html>
